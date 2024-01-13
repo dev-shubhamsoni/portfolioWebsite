@@ -130,13 +130,28 @@ export const Contact = ({ contactIsOpen, setContactIsOpen }) => {
     
             if (response.data) {
                 onSuccess();
+                // Further actions with the data if needed
             }
-            // Further actions with the data if needed
         } catch (error) {
-            console.error('Error during axios request:', error.message);
+            console.error('Error during axios request:', error);
+    
+            // Check if the error has a response
+            if (error.response) {
+                // The request was made and the server responded with a status code
+                // that falls out of the range of 2xx
+                console.error('Server responded with non-2xx status:', error.response.status, error.response.data);
+            } else if (error.request) {
+                // The request was made but no response was received
+                console.error('No response received from the server:', error.request);
+            } else {
+                // Something happened in setting up the request that triggered an Error
+                console.error('Error setting up the request:', error.message);
+            }
+    
             onError();
         }
     }
+    
 
     return (
         <>
