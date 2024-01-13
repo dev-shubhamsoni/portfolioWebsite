@@ -1,0 +1,8 @@
+.textSizeIntroSection1 {
+    @media (min-width: 320px) and (max-width: 1024px) {
+        font-size: clamp(0.8rem, 0.7091rem + 0.4545vw, 1rem);
+    }
+  }
+
+
+ 

@@ -1,0 +1,12 @@
+.buttonTextProjectComponentToLg{
+    @media (min-width: 320px) and (max-width: 1024px) {
+        font-size: clamp(1rem, 0.8636rem + 0.6818vw, 1.3rem);
+      }
+}
+
+.buttonTextProjectComponentLgXl{
+    @media (min-width: 1024px) and (max-width: 1280px) {
+        font-size: clamp(1rem, 0.2rem + 1.25vw, 1.2rem);
+      }
+}
+

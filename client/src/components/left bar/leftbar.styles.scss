@@ -1,0 +1,23 @@
+.textSizeLeftBar {
+  @media (min-width: 320px) and (max-width: 640px) {
+    font-size: clamp(1.1rem, 0.9rem + 1vw, 1.3rem);
+  }
+}
+
+.textSizeLeftBarSmMd {
+    @media (min-width: 640px) and (max-width: 768px) {
+      font-size: clamp(1rem, 0rem + 2.5vw, 1.2rem);
+      }
+}
+
+.textSizeLeftBarMdLg {
+  @media (min-width: 768px) and (max-width: 1024px) {
+    font-size: clamp(1rem, 0.9545rem + 0.2273vw, 1.1rem);
+  }
+}
+
+.textSizeLeftBarLgXl {
+  @media (min-width: 768px) and (max-width: 1024px) {
+    font-size: clamp(0.8rem, 0rem + 1.25vw, 1rem);
+  }
+}

@@ -1,0 +1,46 @@
+@import "../src/scss/index.scss";
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+#root {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: #fafbff;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+.aboutDropDown {
+  animation: dropDown 0.8s ease-in-out forwards;
+}
+
+@keyframes dropDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.scrollbarToHide::-webkit-scrollbar {
+  display: none;
+}
+
+.mobileLeftPanel{
+  animation: mobileLeftSlide 0.8s ease-in-out forwards;
+}
+
+@keyframes mobileLeftSlide {
+  from {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
