@@ -4,7 +4,7 @@ const express = require('express');
 const knex = require('knex');
 const cors = require('cors');
 const axios = require('axios');
-const pg = knex({
+const db = knex({
     client: 'pg',
     connection: {
         host: process.env.PGHOST,
@@ -33,7 +33,7 @@ app.post('/api/v1/contactSubmission', async (req, res) => {
 
         if (recaptchaResponse.data.success) {
             // Process contact submission
-            const response = await pg('enquiry')
+            const response = await db('enquiry')
                 .returning('*')
                 .insert({
                     name: name,

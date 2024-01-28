@@ -243,22 +243,22 @@ export const Section1 = ({ contactHandleButtonClick }) => {
                         
                         
                         lg:hidden
-                        '>"I'm a freelance full-stack developer.
+                        '>"I'm a freelance front-end developer.
                             For the past 2 years, I have worked on various projects.
                             After I graduated from college in 2020, I focused on a few government jobs but was unable
-                            to clear them. After a year of hard work, I gave up on my first dream and started working
-                            towards another 'Coding'. However, the preparation time didn't go in vain; it taught
+                            to clear them. After 2 years of hard work, I gave up on my first dream and started working
+                            towards another 'Software development'. However, the preparation time didn't go in vain; it taught
                             me <b>perseverance</b>, <b>time management</b>, and, most of all, <b>patience</b>."
                         </p>
 
                         <p className=' text-[13px] mt-[1rem] text-left text-[#9b9fb7] hidden
                         
                         lg:block lg:max-xl:text-[0.9rem]
-                        '>"I'm a freelance full-stack developer.
+                        '>"I'm a freelance front-end developer.
                             For the past 2 years, I have worked on various projects. <br></br>
                             After I graduated from college in 2020, I focused on a few government jobs but was unable <br></br>
-                            to clear them. After a year of hard work, I gave up on my first dream and started working <br></br>
-                            towards another 'Coding'. However, the preparation time didn't go in vain; it taught <br></br>
+                            to clear them. After 2 years of hard work, I gave up on my first dream and started working <br></br>
+                            towards another 'Software development'. However, the preparation time didn't go in vain;<br></br> it taught 
                             me <b>perseverance</b>, <b>time management</b>, and, most of all, <b>patience</b>."
                         </p>
                     </div>
